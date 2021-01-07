@@ -20,45 +20,106 @@ body {
         display: inline-block;
         width: 100%;
         max-width: 1600px;
-        margin: calc((100% - 1600px) / 2);
+        margin-left: calc((100% - 1600px) / 2);
+        position: relative;
     }
 
         .header {
             display: inline-block;
             width: 100%;
+            margin-top: 60px;
         }
 
-        .header img {
+            .header img {
+                display: inline-block;
+                float: left;
+            }
+
+            .navigation {
+                display: inline-block;
+                float: right;
+            }
+
+            .link {
+                display: inline-block;
+                text-decoration: none;
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.6 );
+                padding: 14px 45px;
+                transition: color .1s linear;
+                
+            }
+
+            .link:hover {
+                color: #000;
+            }
+
+            .link:last-of-type {
+                color: #fff;
+            }
+
+            .link.button:hover{
+                background-color: #0E4678;
+                color: #fff;
+                transition: 0.2s linear;
+            }
+        
+        .left-column {
             display: inline-block;
             float: left;
+            width: 50%;
         }
-
-        .navigation {
+        
+        .left-column img {
             display: inline-block;
-            float: right;
+            position:absolute;
+            left:-100px;
+            position: relative;
         }
 
-        .link {
+        .left-column-content {
+            position: absolute;
+            bottom: 120px;
+            left: 80px;
+
+        }
+
+        .left-column-content h1 {
+            font-size: 80px;
+            font-weight: 700;
+            color: #0E477A;
+        }
+
+        .left-column-content p {
+            font-size: 30px;
+            line-height: 1.5;
+            max-width: 70%;
+            margin-bottom: 30px;
+        }
+
+        .main-button {
+            font-size: 25px;
+            color: #0E4678;
+            border: 4px solid #0E4678;
+            border-radius: 25px;
             display: inline-block;
             text-decoration: none;
-            font-size: 20px;
-            color: rgba(0, 0, 0, 0.6 );
-            padding: 14px 45px;
+            padding: 14px 55px;
             transition: color .1s linear;
-            
+
         }
 
-        .link:hover {
+        .main-button:hover{
+            background-color: #0E4678;
             color: #fff;
-        }
-
-        .link:last-of-type {
-            color: #000;
-        }
-
-        .link.button:hover{
-            background-color: #fff;
             transition: 0.2s linear;
-          
         }
+
+        .right-column {
+            display: inline-block;
+            width: 50%;
+            float: left;
+            position: relative;
+        }
+
 
